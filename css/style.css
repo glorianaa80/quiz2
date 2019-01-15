@@ -1,0 +1,65 @@
+#container {
+  width: 1100px;
+  background-color: aquamarine; }
+
+.header {
+  text-align: center; }
+
+.header-titulo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.8125rem;
+  color: #333;
+  margin-bottom: 10px; }
+
+.header-secundario {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  color: #333; }
+
+.info-img {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 14px; }
+
+.info-img-button {
+  width: 17%;
+  background-color: #73c5a5;
+  padding: 10px; }
+
+.info-img-button-texto {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold; }
+
+.info-img-titulo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff; }
+
+.info-img-subtitulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 15px; }
+
+.info-img-location {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; }
+
+.img-principal {
+  width: 1100px; }
+
+.img-link {
+  width: 50%;
+  text-decoration: none;
+  color: #fff;
+  background-color: #73c5a5;
+  padding: 10px;
+  font-size: 0.625rem; }
+
+/*# sourceMappingURL=style.css.map */
