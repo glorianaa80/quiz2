@@ -67,14 +67,21 @@
 
 // Imagen
 .img-principal{
-    width: 1100px;
+    width: 50%;
 }
 
 .img-link{
     width: 50%;
+    background-color: $color-primario;
+    padding: 10px;
+    margin: 0;
+}
+
+.img-link-texto{
+    padding-left: 30px;
+    width: 50%;
     text-decoration: none;
     color: $texto2;
-    background-color: $color-primario;
     padding: 10px;
     font-size: 10px / $fzparem + rem;
 }
