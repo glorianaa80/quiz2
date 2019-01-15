@@ -1,0 +1,3 @@
+@function font-size($size,$fzparem,$tipo){
+    @return $size / $fzparem + $tipo
+}

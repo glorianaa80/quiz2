@@ -1,0 +1,80 @@
+// General 
+
+#container{
+    width: 1100px;
+    background-color: aquamarine;
+}
+
+
+// Header
+.header{
+    text-align: center;
+}
+.header-titulo{
+    font-family: $principal;
+    font-size: 45px / $fzparem + rem;
+    color: $texto;
+    margin-bottom: 10px;
+}
+
+.header-secundario{
+    font-family: $secundario;
+    font-size: 14px / $fzparem + rem;
+    color: $texto;
+}
+
+// Info-img
+.info-img{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+
+.info-img-button{
+    width: 17%;
+    background-color: $color-primario;
+    padding: 10px;
+}
+
+.info-img-button-texto{
+    margin: 0;
+    padding: 0;
+    font-family: $secundario;
+    font-size: 18px / $fzparem + rem;
+    font-weight: bold;
+}
+
+.info-img-titulo{
+    font-family: $principal;
+    font-size: 40px / $fzparem + rem;
+    margin-bottom:10px; 
+    color: $texto2;
+}
+
+.info-img-subtitulo{
+    font-family: $secundario;
+    font-size: 24px / $fzparem + rem;
+    color: $texto2;
+    margin-bottom: 15px;
+}
+
+.info-img-location{
+    font-family: $secundario;
+    font-size: 24px / $fzparem + rem;
+    font-weight: bold;
+    color: $texto2;
+}
+
+// Imagen
+.img-principal{
+    width: 1100px;
+}
+
+.img-link{
+    width: 50%;
+    text-decoration: none;
+    color: $texto2;
+    background-color: $color-primario;
+    padding: 10px;
+    font-size: 10px / $fzparem + rem;
+}
