@@ -9,61 +9,90 @@
 
 <body>
   <div id="container">
+
+    <!-- HEADER -->
     <div class="header">
       <h1 class="header-titulo">Upcoming Events and Activities</h1>
-      <p class="header-secundario">We've got a full schedule. Follow us to see if Gearheads are hosting exciting events in your area</p>
+      <p class="header-secundario">We've got a full schedule. Follow us to see if Gearheads are hosting exciting events
+        in your area</p>
     </div>
+    <!-- FINAL HEADER -->
+
+    <!-- INFO IMAGEN -->
     <div class="info-img">
-      <div class="info-img-button">
-        <p class="info-img-button-texto">Next Event</p>
+      <img class="info-img-flecha" src="img/arrow-left.svg" alt="">
+      <div class="info-img-btn">
+        <p class="info-img-btn-texto">Next Event</p>
       </div>
       <h2 class="info-img-titulo">Jan 26th</h2>
-      <p class="info-img-subtitulo"> <span>rock</span> to <span>ice</span> Clinic - Ouray Ice Climbing Festival</p>
+      <p class="info-img-subtitulo"> ROCK to ICE Clinic - Ouray Ice Climbing Festival</p>
       <p class="info-img-location">- Ouray Ice Park</p>
-    </div>
-    <div class="img">
-      <img class="img-principal"  src="img/bg-event.jpeg" alt="Imagen de personas escalando una montaña con hielo">
+      <img class="img-principal" src="img/montaña.jpeg" alt="Imagen de personas escalando una montaña con hielo">
       <div class="img-link">
-        <a class="img-link-texto" href="#">GetEvent Details</a>
+        <a class="img-link-texto" href="#">Get Event Details</a>
       </div>
-      
+      <img class="info-img-flecha2" src="img/arrow-right.svg" alt="">
     </div>
-    <div class="info-fechas">
-      <!-- 1 -->
-      <div class="info-fechas-1">
-        <h2 class="info-fechas-1-titulo">Jan 26th</h2>
-        <p class="info-fechas-1-subtitulo"> ROCK to ICE Clinic - Ouray Ice Climbing Festival</p>
-        <p class="info-fechas-1-location">- Ouray Ice Park</p>
-        <button class="info-fechas-1-button"> <a class="info-fechas-1-button-link" href="#">Get Event Details</a> </button>
+    <!-- FINAL INFO IMAGEN -->
+
+     <!-- EVENTOS -->
+      <div class="info-fechas">
+        <ul class="info-fechas-lista">
+          <!-- EVENTO 1 -->
+          <li class="info-fechas-lista bbline">
+            <span class="info-fechas-lista-titulo hola">Jan 26th</span>
+            <span class="info-fechas-lista-subtitulo">ROCK to ICE Clinic - Ouray Ice Climbing Festival</span>
+            <span class="info-fechas-lista-location">- Ouray Ice Park</span>
+            <button class="info-fechas-lista-btn"> <a class="info-fechas-lista-btn-link" href="#">get event details</a>
+            </button>
+          </li>
+          <!-- EVENTO 2 -->
+          <li class="info-fechas-lista">
+            <span class="info-fechas-lista-titulo">Jan 30th - Feb 1st</span>
+            <span class="info-fechas-lista-subtitulo">Outdoor Retailoer Snow Show </span>
+            <span class="info-fechas-lista-location">- The Colorado Convention Center</span>
+            <button class="info-fechas-lista-btn">
+              <a class="info-fechas-lista-btn-link" href="#">get event details</a>
+            </button>
+          </li>
+          <!-- EVENTO 3 -->
+          <li class="info-fechas-lista">
+            <span class="info-fechas-lista-titulo">Feb 1st</span>
+            <span class="info-fechas-lista-subtitulo">Berthoud Backcountry Bonanza
+            </span>
+            <span class="info-fechas-lista-location">- Berthoud Pass
+            </span>
+            <button class="info-fechas-lista-btn">
+              <a class="info-fechas-lista-btn-link" href="#">Get Event Details</a>
+            </button>
+          </li>
+          <!-- EVENTO 4 -->
+          <li class="info-fechas-lista">
+            <span class="info-fechas-lista-titulo">Feb 3rd
+            </span>
+            <span class="info-fechas-lista-subtitulo">Fat Biking @ Davil's Thumb Ranch
+            </span>
+            <span class="info-fechas-lista-location">- Devil's Thumb Ranch Resort &Spa
+            </span>
+            <button class="info-fechas-lista-btn">
+              <a class="info-fechas-lista-btn-link" href="#">Get Event Details</a>
+            </button>
+          </li>
+          <!-- EVENTO 5 -->
+          <li class="info-fechas-lista">
+            <span class="info-fechas-lista-titulo">Feb 4th - Feb 5th
+            </span>
+            <span class="info-fechas-lista-subtitulo">SIA/WWSRA On- Snow Demo
+            </span>
+            <span class="info-fechas-lista-location">- Copper Mountain 
+            </span>
+            <button class="info-fechas-lista-btn">
+              <a class="info-fechas-lista-btn-link" href="#">Get Event Details</a>
+            </button>
+          </li>
+        </ul>
       </div>
-      <!-- 2 -->
-      <div class="info-fechas-2">
-        <h2 class="info-fechas-2-titulo">Jan 30th - Feb 1st</h2>
-        <p class="info-fechas-2-subtitulo">Outdoor Retailoer Snow Show</p>
-        <p class="info-fechas-2-location">- The Colorado Convention Center</p>
-        <button class="info-fechas-2-button"> <a class="info-fechas-2-button-link" href="#">Get Event Details</a> </button>
-      </div>
-      <!-- 3 -->
-      <div class="info-fechas-3">
-        <h2 class="info-fechas-3-titulo">Feb 1st</h2>
-        <p class="info-fechas-3-subtitulo">Berthoud Backcountry Bonanza</p>
-        <p class="info-fechas-3-location">- Berthoud Pass</p>
-        <button class="info-fechas-3-button">  <a class="info-fechas-3-button-link" href="#">Get Event Details</a> </button>
-      </div>
-      <!-- 4 -->
-      <div class="info-fechas-4">
-        <h2 class="info-fechas-4-titulo">Feb 3rd</h2>
-        <p class="info-fechas-4-subtitulo">Fat Biking @ Davil's Thumb Ranch</p>
-        <p class="info-fechas-4-location">- Devil's Thumb Ranch Resort &Spa</p>
-        <button class="info-fechas-4-button"> <a class="info-fechas-4-button-link" href="#">Get Event Details</a> </button>
-      </div>
-      <!-- 5 -->
-      <div class="info-fechas-5">
-        <h2 class="info-fechas-5-titulo">Feb 4th - Feb 5th</h2>
-        <p class="info-fechas-5-subtitulo">SIA/WWSRA On- Snow Demo</p>
-        <p class="info-fechas-5-location">- Copper Mountain</p>
-        <button class="info-fechas-5-button"> <a class="info-fechas-5-button-link" href="#">Get Event Details</a> </button>
-      </div>
+
     </div>
   </div>
 
