@@ -2,13 +2,13 @@
 
 #container{
     width: 1100px;
-    background-color: aquamarine;
 }
 
 
 // Header
 .header{
     text-align: center;
+    margin-left: 101px;
 }
 .header-titulo{
     font-family: $principal;
@@ -27,16 +27,21 @@
 .info-img{
     width: 50%;
     margin-top: 20px;
-    margin-left: 14px;
+    margin-left: 55px;
+    float: left;
+    height: 720px;
+    position: relative;
 }
 
-.info-img-button{
+.info-img-btn{
     width: 17%;
     background-color: $color-primario;
     padding: 10px;
+    margin-bottom: 100px;
+    margin-left: 10px;
 }
 
-.info-img-button-texto{
+.info-img-btn-texto{
     margin: 0;
     padding: 0;
     font-family: $secundario;
@@ -48,14 +53,17 @@
     font-family: $principal;
     font-size: 40px / $fzparem + rem;
     margin-bottom:10px; 
+    margin-left: 10px;
     color: $texto2;
 }
 
 .info-img-subtitulo{
+    width: 61%;
     font-family: $secundario;
     font-size: 24px / $fzparem + rem;
     color: $texto2;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+    margin-left: 10px;
 }
 
 .info-img-location{
@@ -63,18 +71,40 @@
     font-size: 24px / $fzparem + rem;
     font-weight: bold;
     color: $texto2;
+    margin-left: 10px;
+}
+
+// Flechas
+.info-img-flecha{
+    width: 45px;
+    height: 45px;
+    margin-left: -50px;
+    margin-bottom: -358px
+}
+
+.info-img-flecha2{
+    width: 48px;
+    height: 48px;
+    float: right;
+    margin-top: -420px;
+    margin-right: -54px;
 }
 
 // Imagen
 .img-principal{
-    width: 50%;
+    height: -webkit-fill-available;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .img-link{
-    width: 50%;
+    width: 96.4%;
     background-color: $color-primario;
     padding: 10px;
-    margin: 0;
+    margin-top: 340px;
 }
 
 .img-link-texto{
@@ -83,5 +113,69 @@
     text-decoration: none;
     color: $texto2;
     padding: 10px;
+    font-family: $secundario;
     font-size: 10px / $fzparem + rem;
+    margin-left: 80%;
+}
+
+// Eventos
+
+
+.info-fechas{
+    width: 45%;
+    display: block;
+    float: right;
+}
+
+.info-fechas-lista{
+  list-style: none;
+}
+
+// Evento 1
+.info-fechas-lista{
+    padding: 0;
+    margin: 20px 0 30px 60px;
+}
+
+.bbline{
+    border-left:15px solid $color-primario;
+    padding-left: 35px;
+}  
+
+.info-fechas-lista-titulo{
+    font-family: $principal;
+    font-size: 28px / $fzparem + rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.info-fechas-lista-subtitulo{
+    font-family: $secundario;
+    font-size: 14px / $fzparem + rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.info-fechas-lista-location{
+    font-family: $secundario;
+    font-size: 14px / $fzparem + rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;   
+}
+
+.info-fechas-lista-btn{
+    height: 30px;
+    border: 1px solid $btn;
+    border-radius: 100px;
+    background-color: $texto2;
+}
+
+.info-fechas-lista-btn-link{
+    font-family: $secundario;
+    font-weight: bold;
+    font-size: 12px / $fzparem + rem;
+    color: $btn;
+    text-decoration: none;
+    text-transform: capitalize;
 }
