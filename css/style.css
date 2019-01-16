@@ -1,9 +1,9 @@
 #container {
-  width: 1100px;
-  background-color: aquamarine; }
+  width: 1100px; }
 
 .header {
-  text-align: center; }
+  text-align: center;
+  margin-left: 101px; }
 
 .header-titulo {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -19,14 +19,19 @@
 .info-img {
   width: 50%;
   margin-top: 20px;
-  margin-left: 14px; }
+  margin-left: 55px;
+  float: left;
+  height: 720px;
+  position: relative; }
 
-.info-img-button {
+.info-img-btn {
   width: 17%;
   background-color: #73c5a5;
-  padding: 10px; }
+  padding: 10px;
+  margin-bottom: 100px;
+  margin-left: 10px; }
 
-.info-img-button-texto {
+.info-img-btn-texto {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -37,28 +42,50 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2.5rem;
   margin-bottom: 10px;
+  margin-left: 10px;
   color: #fff; }
 
 .info-img-subtitulo {
+  width: 61%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: #fff;
-  margin-bottom: 15px; }
+  margin-bottom: 50px;
+  margin-left: 10px; }
 
 .info-img-location {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff; }
+  color: #fff;
+  margin-left: 10px; }
+
+.info-img-flecha {
+  width: 45px;
+  height: 45px;
+  margin-left: -50px;
+  margin-bottom: -358px; }
+
+.info-img-flecha2 {
+  width: 48px;
+  height: 48px;
+  float: right;
+  margin-top: -420px;
+  margin-right: -54px; }
 
 .img-principal {
-  width: 50%; }
+  height: -webkit-fill-available;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: -1; }
 
 .img-link {
-  width: 50%;
+  width: 96.4%;
   background-color: #73c5a5;
   padding: 10px;
-  margin: 0; }
+  margin-top: 340px; }
 
 .img-link-texto {
   padding-left: 30px;
@@ -66,6 +93,57 @@
   text-decoration: none;
   color: #fff;
   padding: 10px;
-  font-size: 0.625rem; }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.625rem;
+  margin-left: 80%; }
+
+.info-fechas {
+  width: 45%;
+  display: block;
+  float: right; }
+
+.info-fechas-lista {
+  list-style: none; }
+
+.info-fechas-lista {
+  padding: 0;
+  margin: 20px 0 30px 60px; }
+
+.bbline {
+  border-left: 15px solid #73c5a5;
+  padding-left: 35px; }
+
+.info-fechas-lista-titulo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  display: block; }
+
+.info-fechas-lista-subtitulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+  display: block; }
+
+.info-fechas-lista-location {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block; }
+
+.info-fechas-lista-btn {
+  height: 30px;
+  border: 1px solid #222;
+  border-radius: 100px;
+  background-color: #fff; }
+
+.info-fechas-lista-btn-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #222;
+  text-decoration: none;
+  text-transform: capitalize; }
 
 /*# sourceMappingURL=style.css.map */
