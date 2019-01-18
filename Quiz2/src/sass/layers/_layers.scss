@@ -98,13 +98,14 @@
     top: 0;
     overflow: hidden;
     z-index: -1;
+    filter: brightness(60%);
 }
 
 .img-link{
     width: 96.4%;
     background-color: $color-primario;
     padding: 10px;
-    margin-top: 340px;
+    margin-top: 350px;
 }
 
 .img-link-texto{
@@ -135,6 +136,7 @@
 .info-fechas-lista{
     padding: 0;
     margin: 20px 0 30px 60px;
+    cursor: pointer;
 }
 
 .bbline{
@@ -169,6 +171,12 @@
     border: 1px solid $btn;
     border-radius: 100px;
     background-color: $texto2;
+    color: $texto2;
+}
+
+.info-fechas-lista-btn:hover{
+    background-color: $color-primario;
+    border: 1px solid $color-primario;
 }
 
 .info-fechas-lista-btn-link{
@@ -178,4 +186,8 @@
     color: $btn;
     text-decoration: none;
     text-transform: capitalize;
+}
+
+.info-fechas-lista-btn-link:hover{
+    color: $texto2;
 }
