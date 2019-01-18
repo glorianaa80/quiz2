@@ -1,17 +1,29 @@
 // Creacion de variables generales del documento
 let response;
 const request = new XMLHttpRequest();
+// Variables generales del load
+const container = document.getElementById('evento1');
+const container2 = document.getElementById('evento2');
+const container3 = document.getElementById('evento3');
+const container4 = document.getElementById('evento4');
+const container5 = document.getElementById('evento5');
+const btnInfo = document.getElementById('btn-info');
+const imagen = document.getElementById('imagen');
+const anterior1 = document.getElementById('anterior');
+const siguiente1 = document.getElementById('siguiente');
+let indiceImg = 1;
+let info = 0;
 
 request.addEventListener('load', (event) => {
   // Obtiene la respuesta.
   response = event.target.response.events;
   console.log(response);
-  // Variables generales del load
-  const container = document.getElementById('evento1');
-  const container2 = document.getElementById('evento2');
-  const container3 = document.getElementById('evento3');
-  const container4 = document.getElementById('evento4');
-  const container5 = document.getElementById('evento5');
+  // IMAGEN PRINCIPAL
+  document.querySelector('h2').innerHTML = response[0].hardcoded;
+  document.querySelector('#descrpcion0').innerHTML = response[0].name.text;
+  document.querySelector('#locacion0').innerHTML = `- ${response[0].venue.name}`;
+  btnInfo.setAttribute('href', response[0].url);
+  imagen.src = 'img/bg-event-1.jpeg'
   // EVENTO 1
   // FECHA
   const itemResponseName = response[0].hardcoded;
@@ -134,36 +146,62 @@ request.addEventListener('load', (event) => {
 });
 
 // CAMBIAR IMAGEN
-const imagenes = [];
-
-imagenes[0] = 'img/montaña.jpeg';
-imagenes[1] = 'img/bg-event-2.jpeg';
-imagenes[2] = 'img/bg-event-3.jpeg';
-imagenes[3] = 'img/bg-event-4.jpeg';
-imagenes[4] = 'img/bg-event-5.jpeg';
-
-const imagen = document.getElementById('imagen');
-const indiceImagenes = 0;
-const anterior1 = document.getElementById('anterior');
-const siguiente1 = document.getElementById('siguiente');
-
 function siguiente() {
-  if (indiceImagenes > 4) {
-    indiceImagenes = 0;
+  indiceImg ++;
+  if (indiceImg > 5) {
+    indiceImg = 1;
   }
-  imagen.src = imagenes[indiceImagenes];
-  indiceImagenes++;
+  imagen.src = `img/bg-event-${indiceImg}.jpeg`;
+  console.log('hola');
+
+  // Cambio de información
+  info ++;
+  if (info > 4) {
+    info = 0;
+  }
+  document.querySelector('h2').innerHTML = response[info].hardcoded;
+  document.querySelector('#descrpcion0').innerHTML = response[info].name.text;
+  document.querySelector('#locacion0').innerHTML = response[info].venue.name;
+  btnInfo.setAttribute('href', response[info].url);
 }
 function anterior() {
-  if (indiceImagenes < 0) {
-    indiceImagenes = 4;
+  indiceImg--;
+  if (indiceImg < 1) {
+    indiceImg = 5;
   }
-  imagen.src = imagenes[indiceImagenes];
-  indiceImagenes--;
+  imagen.src = `img/bg-event-${indiceImg}.jpeg`;
+  // Cambio de información
+  info--;
+  if (info < 0) {
+    info = 4;
+  }
+  document.querySelector('h2').innerHTML = response[info].hardcoded;
+  document.querySelector('#descrpcion0').innerHTML = response[info].name.text;
+  document.querySelector('#locacion0').innerHTML = response[info].venue.name;
+  btnInfo.setAttribute('href', response[info].url);
+  console.log('adios');
 }
 
-siguiente1.onclick = siguiente;
-anterior1.onclick = anterior;
+// FUNCION DE ACTIVO
+function activo() {
+  const lis = document.querySelectorAll('li');
+  for (const i of lis) {
+    i.addEventListener('click', () => {
+      const li = i;
+      for (const a of lis) {
+        a.className = 'info-fechas-lista';
+      }
+      li.className = 'info-fechas-lista bbline';
+    });
+  }
+}
+
+container2.addEventListener('click', activo);
+container3.addEventListener('click', activo);
+container4.addEventListener('click', activo);
+container5.addEventListener('click', activo);
+siguiente1.addEventListener('click', siguiente);
+anterior1.addEventListener('click', anterior);
 
 request.responseType = 'json';
 request.open('GET', '/data.json');

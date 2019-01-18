@@ -79,13 +79,14 @@
   position: absolute;
   top: 0;
   overflow: hidden;
-  z-index: -1; }
+  z-index: -1;
+  filter: brightness(60%); }
 
 .img-link {
   width: 96.4%;
   background-color: #73c5a5;
   padding: 10px;
-  margin-top: 340px; }
+  margin-top: 350px; }
 
 .img-link-texto {
   padding-left: 30px;
@@ -107,7 +108,8 @@
 
 .info-fechas-lista {
   padding: 0;
-  margin: 20px 0 30px 60px; }
+  margin: 20px 0 30px 60px;
+  cursor: pointer; }
 
 .bbline {
   border-left: 15px solid #73c5a5;
@@ -136,7 +138,12 @@
   height: 30px;
   border: 1px solid #222;
   border-radius: 100px;
-  background-color: #fff; }
+  background-color: #fff;
+  color: #fff; }
+
+.info-fechas-lista-btn:hover {
+  background-color: #73c5a5;
+  border: 1px solid #73c5a5; }
 
 .info-fechas-lista-btn-link {
   font-family: Arial, Helvetica, sans-serif;
@@ -145,5 +152,8 @@
   color: #222;
   text-decoration: none;
   text-transform: capitalize; }
+
+.info-fechas-lista-btn-link:hover {
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
