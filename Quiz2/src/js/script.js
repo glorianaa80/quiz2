@@ -1,3 +1,5 @@
+// ME FALTA QUE CUANDO PRESIONE LA IMAGEN SE CAMBIE LA IMAGEN DE ACUERDO CON QUE SELECCIONE Y TAMBIEN QUE AL CAMBIAR LA IMAGEN EL ACTIVO CAMBIE DE ACUERDO A LA IMAGEN EN LA QUE ME ENCUENTRA
+
 // Creacion de variables generales del documento
 let response;
 const request = new XMLHttpRequest();
@@ -127,19 +129,19 @@ request.addEventListener('load', (event) => {
   listItemName5.innerHTML = itemResponseName5;
   container5.appendChild(listItemName5);
   // DESCRICION
-  const itemResponse5 = response[2].name.text;
+  const itemResponse5 = response[4].name.text;
   const listItem5 = document.getElementById('descripcion5');
   listItem5.innerHTML = itemResponse5;
   container5.appendChild(listItem5);
   // LOCALIZACION
-  const itemResponseLi5 = response[2].venue.name;
+  const itemResponseLi5 = response[4].venue.name;
   const listItemLi5 = document.getElementById('locacion5');
   listItemLi5.innerHTML = `- ${itemResponseLi5}`;
   container5.appendChild(listItemLi5);
   // BOTON
   const btn5 = document.getElementById('btn5');
   const btn6 = document.getElementById('btn6');
-  const itemResponseBtn5 = response[2].url;
+  const itemResponseBtn5 = response[4].url;
   btn5.setAttribute('href', itemResponseBtn5);
   btn6.appendChild(btn5);
   container5.appendChild(btn6);
@@ -147,7 +149,7 @@ request.addEventListener('load', (event) => {
 
 // CAMBIAR IMAGEN
 function siguiente() {
-  indiceImg ++;
+  indiceImg++;
   if (indiceImg > 5) {
     indiceImg = 1;
   }
@@ -155,7 +157,7 @@ function siguiente() {
   console.log('hola');
 
   // Cambio de información
-  info ++;
+  info++;
   if (info > 4) {
     info = 0;
   }
@@ -179,6 +181,7 @@ function anterior() {
   document.querySelector('#descrpcion0').innerHTML = response[info].name.text;
   document.querySelector('#locacion0').innerHTML = response[info].venue.name;
   btnInfo.setAttribute('href', response[info].url);
+
   console.log('adios');
 }
 
