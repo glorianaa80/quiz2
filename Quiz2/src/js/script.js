@@ -1,4 +1,4 @@
-// ME FALTA QUE CUANDO PRESIONE LA IMAGEN SE CAMBIE LA IMAGEN DE ACUERDO CON QUE SELECCIONE Y TAMBIEN QUE AL CAMBIAR LA IMAGEN EL ACTIVO CAMBIE DE ACUERDO A LA IMAGEN EN LA QUE ME ENCUENTRA
+/** ME FALTA QUE CUANDO PRESIONE LA IMAGEN SE CAMBIE LA IMAGEN DE ACUERDO CON QUE SELECCIONE Y TAMBIEN QUE AL CAMBIAR LA IMAGEN EL ACTIVO CAMBIE DE ACUERDO A LA IMAGEN EN LA QUE ME ENCUENTRA */
 
 // Creacion de variables generales del documento
 let response;
@@ -19,7 +19,6 @@ let info = 0;
 request.addEventListener('load', (event) => {
   // Obtiene la respuesta.
   response = event.target.response.events;
-  console.log(response);
   // IMAGEN PRINCIPAL
   document.querySelector('h2').innerHTML = response[0].hardcoded;
   document.querySelector('#descrpcion0').innerHTML = response[0].name.text;
@@ -154,7 +153,6 @@ function siguiente() {
     indiceImg = 1;
   }
   imagen.src = `img/bg-event-${indiceImg}.jpeg`;
-  console.log('hola');
 
   // Cambio de información
   info++;
@@ -181,8 +179,6 @@ function anterior() {
   document.querySelector('#descrpcion0').innerHTML = response[info].name.text;
   document.querySelector('#locacion0').innerHTML = response[info].venue.name;
   btnInfo.setAttribute('href', response[info].url);
-
-  console.log('adios');
 }
 
 // FUNCION DE ACTIVO
