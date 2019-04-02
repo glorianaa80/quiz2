@@ -84,9 +84,9 @@ $(document).ready(() => {
         i.addEventListener('click', () => {
           const li = i;
           for (const a of lis) {
-            a.className = 'info-fechas-lista';
+            a.className = 'info--fechas__lista';
           }
-          li.className = 'info-fechas-lista bbline';
+          li.className = 'info--fechas__lista bbline';
         });
       }
     })

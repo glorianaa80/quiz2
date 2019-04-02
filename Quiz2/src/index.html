@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
-  <title>Quiz2</title> 
+  <title>Quiz2</title>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jQuery.js"></script>
 </head>
@@ -14,81 +14,81 @@
 
     <!-- HEADER -->
     <div class="header">
-      <h1 class="header-titulo">Upcoming Events and Activities</h1>
-      <p class="header-secundario">We've got a full schedule. Follow us to see if Gearheads are hosting exciting events
+      <h1 class="header__title">Upcoming Events and Activities</h1>
+      <p class="header__secundario">We've got a full schedule. Follow us to see if Gearheads are hosting exciting events
         in your area</p>
     </div>
     <!-- FINAL HEADER -->
 
     <!-- INFO IMAGEN -->
-    <div class="info-img">
+    <div class="info">
       <img id="anterior" class="info-img-flecha" src="img/arrow-left.svg" alt="">
-      <div class="info-img-btn">
-        <p class="info-img-btn-texto">Next Event</p>
+      <div class="info--btn">
+        <p class="info--btn__texto">Next Event</p>
       </div>
-      <h2 class="info-img-titulo"></h2>
-      <p id="descrpcion0" class="info-img-subtitulo"></p>
-      <p id="locacion0" class="info-img-location"></p>
-      <img id="imagen" class="img-principal" src="" alt="Imagen de personas escalando una montaña con hielo">
-      <div  class="img-link">
-        <a id="btn-info" class="img-link-texto" href="" target="_blank">Get Event Details</a>
+      <h2 class="info__titulo"></h2>
+      <p id="descrpcion0" class="info__subtitulo"></p>
+      <p id="locacion0" class="info__location"></p>
+      <img id="imagen" class="img__principal" src="" alt="Imagen de personas escalando una montaña con hielo">
+      <div class="img__link">
+        <a id="btn-info" class="img__link--texto" href="" target="_blank">Get Event Details</a>
       </div>
-      <img id="siguiente" class="info-img-flecha2" src="img/arrow-right.svg" alt="">
+      <img id="siguiente" class="info--img__flecha2" src="img/arrow-right.svg" alt="">
     </div>
     <!-- FINAL INFO IMAGEN -->
 
     <!-- EVENTOS -->
-    <div class="info-fechas">
+    <div class="info__fechas">
       <ul class="info-fechas-lista">
         <!-- EVENTO 1 -->
-        <li id="evento1" class="info-fechas-lista bbline">
-          <span id="fecha" class="info-fechas-lista-titulo"></span>
-          <span id="descripcion" class="info-fechas-lista-subtitulo"></span>
-          <span id="locacion" class="info-fechas-lista-location"></span>
-          <button id="btn0" class="info-fechas-lista-btn">
-            <a id="btn1" class="info-fechas-lista-btn-link" href="" target="_blank">get event details</a>
+        <li id="evento1" class="info--fechas__lista bbline">
+          <span id="fecha" class="info--lista__titulo"></span>
+          <span id="descripcion" class="info--lista__subtitulo"></span>
+          <span id="locacion" class="info--lista__location"></span>
+          <button id="btn0" class="info--lista__btn">
+            <a id="btn1" class="info--lista__btnlink" href="" target="_blank">get event details</a>
           </button>
         </li>
         <!-- EVENTO 2 -->
-        <li id="evento2" class="info-fechas-lista ">
-          <span id="fecha2"class="info-fechas-lista-titulo"></span>
-          <span id="descripcion2"class="info-fechas-lista-subtitulo"></span>
-          <span id="locacion2"class="info-fechas-lista-location"></span>
-          <button id="btn9" class="info-fechas-lista-btn">
-            <a id="btn2" class="info-fechas-lista-btn-link" href="" target="_blank">get event details</a>
+        <li id="evento2" class="info--fechas__lista ">
+          <span id="fecha2" class="info--lista__titulo"></span>
+          <span id="descripcion2" class="info--lista__subtitulo"></span>
+          <span id="locacion2" class="info--lista__location"></span>
+          <button id="btn1" class="info--lista__btn">
+            <a id="btn2" class="info--lista__btnlink" href="" target="_blank">get event details</a>
           </button>
         </li>
         <!-- EVENTO 3 -->
-        <li id="evento3" class="info-fechas-lista">
-          <span id="fecha3" class="info-fechas-lista-titulo"></span>
-          <span id="descripcion3" class="info-fechas-lista-subtitulo"></span>
-          <span id="locacion3" class="info-fechas-lista-location"></span>
-          <button id="btn8" class="info-fechas-lista-btn">
-            <a id="btn3" class="info-fechas-lista-btn-link" href="" target="_blank">Get Event Details</a>
+        <li id="evento3" class="info--fechas__lista ">
+          <span id="fecha3" class="info--lista__titulo"></span>
+          <span id="descripcion3" class="info--lista__subtitulo"></span>
+          <span id="locacion3" class="info--lista__location"></span>
+          <button id="btn2" class="info--lista__btn">
+            <a id="btn3" class="info--lista__btnlink" href="" target="_blank">get event details</a>
           </button>
         </li>
         <!-- EVENTO 4 -->
-        <li id="evento4" class="info-fechas-lista">
-          <span id="fecha4" class="info-fechas-lista-titulo"></span>
-          <span id="descripcion4" class="info-fechas-lista-subtitulo"></span>
-          <span id="locacion4" class="info-fechas-lista-location"></span>
-          <button id="btn7" class="info-fechas-lista-btn">
-            <a id="btn4" class="info-fechas-lista-btn-link" href="" target="_blank">Get Event Details</a>
+        <li id="evento4" class="info--fechas__lista ">
+          <span id="fecha4" class="info--lista__titulo"></span>
+          <span id="descripcion4" class="info--lista__subtitulo"></span>
+          <span id="locacion4" class="info--lista__location"></span>
+          <button id="btn3" class="info--lista__btn">
+            <a id="btn4" class="info--lista__btnlink" href="" target="_blank">get event details</a>
           </button>
         </li>
         <!-- EVENTO 5 -->
-        <li id="evento5" class="info-fechas-lista">
-          <span id="fecha5" class="info-fechas-lista-titulo"></span>
-          <span id="descripcion5" class="info-fechas-lista-subtitulo"></span>
-          <span id="locacion5" class="info-fechas-lista-location"></span>
-          <button id="btn6" class="info-fechas-lista-btn">
-            <a id="btn5" class="info-fechas-lista-btn-link" href="" target="_blank">Get Event Details</a>
+        <li id="evento5" class="info--fechas__lista ">
+          <span id="fecha5" class="info--lista__titulo"></span>
+          <span id="descripcion5" class="info--lista__subtitulo"></span>
+          <span id="locacion5" class="info--lista__location"></span>
+          <button id="btn4" class="info--lista__btn">
+            <a id="btn5" class="info--lista__btnlink" href="" target="_blank">get event details</a>
           </button>
         </li>
       </ul>
     </div>
   </div>
-  
+
   <!-- <script src="js/script.js"></script> -->
 </body>
 

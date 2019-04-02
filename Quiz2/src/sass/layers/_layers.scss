@@ -1,193 +1,192 @@
 // General 
 
 #container{
-    width: 1100px;
+	width: 1100px;
 }
 
 
 // Header
 .header{
-    text-align: center;
-    margin-left: 101px;
+	text-align: center;
+	margin-left: 101px;
 }
-.header-titulo{
-    font-family: $principal;
-    font-size: 45px / $fzparem + rem;
-    color: $texto;
-    margin-bottom: 10px;
+.header__title{
+	font-family: $principal;
+	font-size: 45px / $fzparem + rem;
+	color: $texto;
+	margin-bottom: 10px;
 }
 
-.header-secundario{
-    font-family: $secundario;
-    font-size: 14px / $fzparem + rem;
-    color: $texto;
+.header__secundario{
+	font-family: $secundario;
+	font-size: 14px / $fzparem + rem;
+	color: $texto;
 }
 
 // Info-img
-.info-img{
-    width: 50%;
-    margin-top: 20px;
-    margin-left: 55px;
-    float: left;
-    height: 720px;
-    position: relative;
+.info{
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 55px;
+	float: left;
+	height: 720px;
+	position: relative;
 }
 
-.info-img-btn{
-    width: 17%;
-    background-color: $color-primario;
-    padding: 10px;
-    margin-bottom: 100px;
-    margin-left: 10px;
+.info--btn{
+	width: 17%;
+	background-color: $color-primario;
+	padding: 10px;
+	margin-bottom: 100px;
+	margin-left: 10px;
 }
 
-.info-img-btn-texto{
-    margin: 0;
-    padding: 0;
-    font-family: $secundario;
-    font-size: 18px / $fzparem + rem;
-    font-weight: bold;
+.info--btn__texto{
+	margin: 0;
+	padding: 0;
+	font-family: $secundario;
+	font-size: 18px / $fzparem + rem;
+	font-weight: bold;
 }
 
-.info-img-titulo{
-    font-family: $principal;
-    font-size: 40px / $fzparem + rem;
-    margin-bottom:10px; 
-    margin-left: 10px;
-    color: $texto2;
+.info__titulo{
+	font-family: $principal;
+	font-size: 40px / $fzparem + rem;
+	margin-bottom:10px; 
+	margin-left: 10px;
+	color: $texto2;
 }
 
-.info-img-subtitulo{
-    width: 61%;
-    font-family: $secundario;
-    font-size: 24px / $fzparem + rem;
-    color: $texto2;
-    margin-bottom: 50px;
-    margin-left: 10px;
+.info__subtitulo{
+	width: 61%;
+	font-family: $secundario;
+	font-size: 24px / $fzparem + rem;
+	color: $texto2;
+	margin-bottom: 50px;
+	margin-left: 10px;
 }
 
-.info-img-location{
-    font-family: $secundario;
-    font-size: 24px / $fzparem + rem;
-    font-weight: bold;
-    color: $texto2;
-    margin-left: 10px;
+.info__location{
+	font-family: $secundario;
+	font-size: 24px / $fzparem + rem;
+	font-weight: bold;
+	color: $texto2;
+	margin-left: 10px;
 }
 
 // Flechas
 .info-img-flecha{
-    width: 45px;
-    height: 45px;
-    margin-left: -50px;
-    margin-bottom: -358px
+	width: 45px;
+	height: 45px;
+	margin-left: -50px;
+	margin-bottom: -358px
 }
 
-.info-img-flecha2{
-    width: 48px;
-    height: 48px;
-    float: right;
-    margin-top: -420px;
-    margin-right: -54px;
+.info--img__flecha2{
+	width: 48px;
+	height: 48px;
+	float: right;
+	margin-top: -420px;
+	margin-right: -54px;
 }
 
 // Imagen
-.img-principal{
-    height: -webkit-fill-available;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
-    z-index: -1;
-    filter: brightness(60%);
+.img__principal{
+	height: -webkit-fill-available;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	z-index: -1;
+	filter: brightness(60%);
 }
 
-.img-link{
-    width: 96.4%;
-    background-color: $color-primario;
-    padding: 10px;
-    margin-top: 350px;
+.img__link{
+	width: 96.4%;
+	background-color: $color-primario;
+	padding: 10px;
+	margin-top: 350px;
 }
 
-.img-link-texto{
-    padding-left: 30px;
-    width: 50%;
-    text-decoration: none;
-    color: $texto2;
-    padding: 10px;
-    font-family: $secundario;
-    font-size: 10px / $fzparem + rem;
-    margin-left: 80%;
+.img__link--texto{
+	padding-left: 30px;
+	width: 50%;
+	text-decoration: none;
+	color: $texto2;
+	padding: 10px;
+	font-family: $secundario;
+	font-size: 10px / $fzparem + rem;
+	margin-left: 80%;
 }
 
 // Eventos
 
-
-.info-fechas{
-    width: 45%;
-    display: block;
-    float: right;
+.info__fechas{
+	width: 45%;
+	display: block;
+	float: right;
 }
 
-.info-fechas-lista{
-  list-style: none;
+.info--fechas__lista{
+list-style: none;
 }
 
 // Evento 1
-.info-fechas-lista{
-    padding: 0;
-    margin: 20px 0 30px 60px;
-    cursor: pointer;
+.info--fechas__lista{
+	padding: 0;
+	margin: 20px 0 30px 60px;
+	cursor: pointer;
 }
 
 .bbline{
-    border-left:15px solid $color-primario;
-    padding-left: 35px;
+	border-left:15px solid $color-primario;
+	padding-left: 35px;
 }  
 
-.info-fechas-lista-titulo{
-    font-family: $principal;
-    font-size: 28px / $fzparem + rem;
-    margin-bottom: 10px;
-    display: block;
+.info--lista__titulo{
+	font-family: $principal;
+	font-size: 28px / $fzparem + rem;
+	margin-bottom: 10px;
+	display: block;
 }
 
-.info-fechas-lista-subtitulo{
-    font-family: $secundario;
-    font-size: 14px / $fzparem + rem;
-    margin-bottom: 10px;
-    display: block;
+.info--lista__subtitulo{
+	font-family: $secundario;
+	font-size: 14px / $fzparem + rem;
+	margin-bottom: 10px;
+	display: block;
 }
 
-.info-fechas-lista-location{
-    font-family: $secundario;
-    font-size: 14px / $fzparem + rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;   
+.info--lista__location{
+	font-family: $secundario;
+	font-size: 14px / $fzparem + rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	display: block;   
 }
 
-.info-fechas-lista-btn{
-    height: 30px;
-    border: 1px solid $btn;
-    border-radius: 100px;
-    background-color: $texto2;
-    color: $texto2;
+.info--lista__btn{
+	height: 30px;
+	border: 1px solid $btn;
+	border-radius: 100px;
+	background-color: $texto2;
+	color: $texto2;
 }
 
-.info-fechas-lista-btn:hover{
-    background-color: $color-primario;
-    border: 1px solid $color-primario;
+.info--lista__btn:hover{
+	background-color: $color-primario;
+	border: 1px solid $color-primario;
 }
 
-.info-fechas-lista-btn-link{
-    font-family: $secundario;
-    font-weight: bold;
-    font-size: 12px / $fzparem + rem;
-    color: $btn;
-    text-decoration: none;
-    text-transform: capitalize;
+.info--lista__btnlink{
+	font-family: $secundario;
+	font-weight: bold;
+	font-size: 12px / $fzparem + rem;
+	color: $btn;
+	text-decoration: none;
+	text-transform: capitalize;
 }
 
-.info-fechas-lista-btn-link:hover{
-    color: $texto2;
+.info--lista__btnlink:hover{
+	color: $texto2;
 }
